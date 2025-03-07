@@ -1,0 +1,19 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: baw-discovery-server
+
+eureka:
+  client:
+    register-with-eureka: false  # The server itself doesn't register
+    fetch-registry: false        # The server doesn?t need to fetch service info
+#    serviceUrl:
+#      defaultZone: http://localhost:8888/eureka/
+#  server:
+#    enable-self-preservation: true  # Helps avoid unnecessary eviction of services
+
+logging:
+  level:
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
