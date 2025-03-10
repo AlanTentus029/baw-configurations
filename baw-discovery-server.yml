@@ -6,8 +6,8 @@ spring:
 
 eureka:
   client:
-    register-with-eureka: false  # The server itself doesn't register
-    fetch-registry: false        # The server doesn?t need to fetch service info
+    register-with-eureka: false
+    fetch-registry: false
     serviceUrl:
      defaultZone: http://localhost:8888/eureka/
     instance:
