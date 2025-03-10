@@ -8,8 +8,10 @@ eureka:
   client:
     register-with-eureka: false  # The server itself doesn't register
     fetch-registry: false        # The server doesn?t need to fetch service info
-#    serviceUrl:
-#      defaultZone: http://localhost:8888/eureka/
+    serviceUrl:
+     defaultZone: http://localhost:8888/eureka/
+    instance:
+    hostname: localhost   
 #  server:
 #    enable-self-preservation: true  # Helps avoid unnecessary eviction of services
 
