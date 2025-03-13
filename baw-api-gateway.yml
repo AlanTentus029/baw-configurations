@@ -1,0 +1,30 @@
+server:
+  port: 9091
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://baw-user-service
+          predicates:
+            - Path=/user/**
+        - id: servicemgmt-service
+          uri: lb://baw-servicemgmt-service
+          predicates:
+            - Path=/service/**
+        - id: location-service
+          uri: lb://baw-location-service
+          predicates:
+            - Path=/location/**
+        - id: rating-service
+          uri: lb://baw-rating-service
+          predicates:
+            - Path=/rating/** 
+        - id: booking-service
+          uri: lb://baw-booking-service
+          predicates:
+            - Path=/booking/**
+        - id: payment-service
+          uri: lb://baw-payment-service
+          predicates:
+            - Path=/payment/**       
