@@ -7,24 +7,24 @@ spring:
         - id: user-service
           uri: lb://baw-user-service
           predicates:
-            - Path=/user/**
+            - Path=/api/user/**
         - id: servicemgmt-service
           uri: lb://baw-servicemgmt-service
           predicates:
-            - Path=/service/**
+            - Path=/api/service/**
         - id: location-service
           uri: lb://baw-location-service
           predicates:
-            - Path=/location/**
+            - Path=/api/location/**
         - id: rating-service
           uri: lb://baw-rating-service
           predicates:
-            - Path=/rating/** 
+            - Path=/api/rating/** 
         - id: booking-service
           uri: lb://baw-booking-service
           predicates:
-            - Path=/booking/**
+            - Path=/api/booking/**
         - id: payment-service
           uri: lb://baw-payment-service
           predicates:
-            - Path=/payment/**       
+            - Path=/api/payment/**       
