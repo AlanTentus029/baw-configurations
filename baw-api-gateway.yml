@@ -5,7 +5,7 @@ spring:
     gateway:
       routes:
         - id: user-service
-          uri: lb://baw-user-service
+          uri: lb://BAW-USER-SERVICE
           predicates:
             - Path=/api/user/**
         - id: servicemgmt-service
